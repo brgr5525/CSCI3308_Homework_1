@@ -13,8 +13,25 @@
       <body>
 
       <!-- Simple navbar -->
-      <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+      <nav class="navbar bg-secondary navbar-dark">
+        <!-- Brand/ logo -->
         <a class="navbar-brand" href="#">Home</a>
+
+        <!-- toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="mypage.html">Orignal HTML Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Interest Form</a>
+          </ul>
+        </div>
+
       </nav>
 
       <!-- Container-fluid: heading/everything with span page -->
@@ -44,7 +61,7 @@
         <h3>My favorite projects</h3>
 
         <!-- Table of favorite projects; table-hover specifies type of borders -->
-        <table class="table table-hover">
+        <table class="table table-striped">
           <thead>
             <tr>
               <th>#</th>
@@ -82,21 +99,21 @@
 
         <!-- Card-deck creates mulitple cards inline, auto adjusts size to be uniform -->
         <div class="card-deck">
-          <div class="card">
+          <div class="card bg-light">
             <img class="card-img-top" src="img/reading_card.jpeg" alt="card image" height="200px">
             <div class="card-body">
               <h4 class="card-title">Reading</h4>
               <p class="card-text">I like reading because it lets me escape into a different world for little bit.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card bg-light">
             <img class="card-img-top" src="img/gaming_card.jpeg" alt="card image" height="200px">
             <div class="card-body">
               <h4 class="card-title">Video Games</h4>
               <p class="card-text">I like video games because I grew up playing them with my dad.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card bg-light">
             <img class="card-img-top" src="img/programming_card.jpg" alt="card image" height="200px">
             <div class="card-body">
               <h4 class="card-title">Programming</h4>
