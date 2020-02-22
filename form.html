@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Add Interest</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      </head>
+      <body>
+
+      <!-- Simple navbar -->
+      <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        <a class="navbar-brand" href="mypage_bootstrap.html">Home</a>
+      </nav>
+
+      <div class="container-fluid">
+        <h1>Add New Interest</h1>
+        <form>
+
+          <div class="form-group">
+            <label for="interestName">Interest Name:</label>
+            <input type="text" class="form-control" id="interestName" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="textAboutInterest">Text About Interest:</label>
+            <textarea class="form-control" id="textAboutInterest" rows="4"></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="col">
+              <p>Upload Local Image:</p>
+              <input type="file" id="myFile" name="filename2">
+            </div>
+            <div class="col">
+              <p>Select # Tweets to Display:</p>
+              <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5+</option>
+              </select>
+            </div>
+          </div>
+          </br>
+          <div>
+            <p>On a scale of 1-5, how interested in this are you?</p>
+            <div class="form-check-inline">
+              <label class="form-check-label" for="radio1">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio">1
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label" for="radio2">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio">2
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label" for="radio3">
+                <input type="radio" class="form-check-input" id="radio3" name="optradio">3
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label" for="radio4">
+                <input type="radio" class="form-check-input" id="radio4" name="optradio">4
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label" for="radio5">
+                <input type="radio" class="form-check-input" id="radio5" name="optradio">5
+              </label>
+            </div>
+          </div>
+          </br>
+          <p>Login to Finish Submitting</p>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" id="username" placeholder="Username">
+
+            </div>
+            <div class="col">
+              <input type="password" class="form-control" id="pswd" placeholder="Password">
+            </div>
+          </div>
+          </br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      </body>
+    </html>
